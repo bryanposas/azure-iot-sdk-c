@@ -213,7 +213,7 @@ int main(void)
     //you are URL Decoding responses yourself.
     //ONLY valid for use with MQTT
     bool urlDecodeOn = true;
-    (void)IoTHubDeviceClient_LL_SetOption(device_ll_handle, OPTION_AUTO_URL_ENCODE_DECODE, &urlDecodeOn);
+    (void)IoTHubDeviceClient_LL_SetOption(iotHubClientHandle, OPTION_AUTO_URL_ENCODE_DECODE, &urlDecodeOn);
 
     iothub_client_sample_mqtt_esp8266_run();
     return 0;

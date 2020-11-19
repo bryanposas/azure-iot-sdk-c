@@ -68,7 +68,7 @@ int main(void)
         //you are URL Encoding responses yourself.
         //ONLY valid for use with MQTT
         bool urlEncodeOn = true;
-        (void)IoTHubDeviceClient_LL_SetOption(device_ll_handle, OPTION_AUTO_URL_ENCODE_DECODE, &urlEncodeOn);
+        (void)IoTHubDeviceClient_LL_SetOption(iotHubModuleClientHandle, OPTION_AUTO_URL_ENCODE_DECODE, &urlEncodeOn);
 
         size_t iterator = 0;
         double temperature = 0;
