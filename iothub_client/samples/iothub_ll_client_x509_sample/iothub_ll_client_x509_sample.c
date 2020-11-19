@@ -142,7 +142,7 @@ int main(void)
         IoTHubDeviceClient_LL_SetOption(device_ll_handle, OPTION_TRUSTED_CERT, certificates);
 #endif // SET_TRUSTED_CERT_IN_SAMPLES
 
-#if defined SAMPLE_MQTT || defined SAMPLE_SAMPLE_MQTT_OVER_WEBSOCKETSMQTT_WS
+#if defined SAMPLE_MQTT || defined SAMPLE_MQTT_OVER_WEBSOCKETS
         //Setting the auto URL Encoder (recommended for MQTT). Please use this option unless
         //you are URL Encoding inputs yourself.
         //ONLY valid for use with MQTT
